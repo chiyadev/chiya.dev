@@ -1,15 +1,31 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React, { memo } from "react";
+import Layout from "../components/Layout";
+import Background from "../assets/bg.jpg";
+import { chakra } from "@chakra-ui/react";
+import LogoText from "../components/Home/LogoText";
+import LinkList from "../components/Home/LinkList";
+import CreditText from "../components/Home/CreditText";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const Home = () => {
+  return (
+    <Layout title="chiya.dev">
+      <chakra.div position="relative" minH="100vh" bg={`url(${Background}) center center / cover`}>
+        <chakra.div
+          position="absolute"
+          bottom={0}
+          left={0}
+          right={0}
+          h="sm"
+          bg="linear-gradient(transparent, rgba(0, 0, 0, 0.5))"
+          pointerEvents="none"
+        />
 
-export default IndexPage
+        <LogoText />
+        <LinkList />
+        <CreditText />
+      </chakra.div>
+    </Layout>
+  );
+};
+
+export default memo(Home);

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Monallesia Script";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Monallesia Script"), url("../../assets/MonallesiaScript.ttf");
+}
+
+.container {
+    font-size: 5rem;
+}
+
+@media only screen and (max-width: 62rem) {
+    .container {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    .container {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        right: 0;
+        margin-bottom: 4rem;
+        font-size: 3.5rem;
+    }
+}
