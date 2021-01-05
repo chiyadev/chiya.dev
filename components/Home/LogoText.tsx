@@ -14,17 +14,14 @@ const LogoText = () => {
       px={12}
       py={8}
       pointerEvents="none"
+      color="white"
       textAlign="center"
       fontWeight="bold"
-      textShadow={`-1px -1px 0 ${gray}, 1px -1px 0 ${gray}, -1px 1px 0 ${gray}, 1px 1px 0 ${gray}`}
       fontFamily="Monallesia Script"
+      textShadow={`-1px -1px 0 ${gray}, 1px -1px 0 ${gray}, -1px 1px 0 ${gray}, 1px 1px 0 ${gray}`}
     >
-      <chakra.span whiteSpace="pre" color="pink.200">
-        chiya
-      </chakra.span>
-      <chakra.span whiteSpace="pre" color="gray.200">
-        .dev
-      </chakra.span>
+      <chakra.span whiteSpace="pre">chiya</chakra.span>
+      <chakra.span whiteSpace="pre">.dev</chakra.span>
     </chakra.div>
   );
 };
