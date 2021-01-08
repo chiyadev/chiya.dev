@@ -9,11 +9,10 @@ const LinkList = () => {
   return (
     <Wrap
       position="absolute"
-      bottom={0}
-      left={0}
-      right={0}
       color="white"
       spacing={4}
+      bottom={0}
+      w="full"
       px={12}
       py={8}
       justify="flex-end"

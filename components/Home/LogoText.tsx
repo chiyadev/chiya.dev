@@ -13,7 +13,6 @@ const LogoText = () => {
       left={0}
       px={12}
       py={8}
-      pointerEvents="none"
       color="white"
       textAlign="center"
       fontWeight="bold"
