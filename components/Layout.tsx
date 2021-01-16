@@ -17,6 +17,8 @@ const Layout = ({ children, title }: { children?: ReactNode; title: string }) =>
       <link rel="shortcut icon" href="/favicon.ico?v=v2" />
       <meta name="msapplication-TileColor" content="#00aba9" />
       <meta name="theme-color" content="#ffffff" />
+
+      <script async defer data-website-id="f555f542-14e4-47ec-9c64-615f0b8ff286" src="https://a.chiya.dev/umami.js" />
     </Head>
 
     {children}
