@@ -38,7 +38,7 @@ const ParallaxBackground = () => {
         position="absolute"
         w="full"
         h="full"
-        snowflakeCount={size ? size[0] * 0.15 : undefined}
+        snowflakeCount={size ? size[0] * 0.1 : undefined}
         transition={parallaxEasing}
         style={{
           transform: `scale(${1 + parallaxStrength * 5}) translate(${parallax[0] * 500}%, ${parallax[1] * 500}%)`,
